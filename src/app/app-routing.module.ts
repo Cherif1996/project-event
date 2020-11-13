@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalaryComponent } from './galary/galary.component';
 
 const routes: Routes = [
-  {path: '' , component: AppComponent}
+  {path: 'galary' , component: GalaryComponent},
+
 ];
 
 

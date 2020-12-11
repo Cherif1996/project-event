@@ -6,12 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalaryComponent } from './galary/galary.component';
 import { ServicesComponent } from './services/services.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { VideosComponent } from './videos/videos.component';
-import { PartenairesComponent } from './partenaires/partenaires.component';
-import { EquipeComponent } from './equipe/equipe.component';
+import { AgenceComponent } from './agence/agence.component';
+import { EvenementComponent } from './evenement/evenement.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +16,9 @@ import { EquipeComponent } from './equipe/equipe.component';
     NavbarComponent,
     GalaryComponent,
     ServicesComponent,
-    PortfolioComponent,
     ContactComponent,
-    FooterComponent,
-    VideosComponent,
-    PartenairesComponent,
-    EquipeComponent,
+    AgenceComponent,
+    EvenementComponent,
   ],
   imports: [
     BrowserModule,

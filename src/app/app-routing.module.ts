@@ -19,7 +19,7 @@ import {EvenementComponent} from './evenement/evenement.component';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+ /* { path: '', component: HomeComponent },*/
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
@@ -31,7 +31,7 @@ const routes: Routes = [
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  /*{ path: '', redirectTo: 'home', pathMatch: 'full' }*/
 
 
 ];

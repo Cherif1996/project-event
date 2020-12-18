@@ -18,6 +18,7 @@ import {EvenementComponent} from './evenement/evenement.component';
 
 
 
+
 const routes: Routes = [
  /* { path: '', component: HomeComponent },*/
   { path: 'login', component: LoginComponent },
@@ -31,6 +32,8 @@ const routes: Routes = [
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
+
+  
   /*{ path: '', redirectTo: 'home', pathMatch: 'full' }*/
 
 

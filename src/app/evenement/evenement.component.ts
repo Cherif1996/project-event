@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {events} from '../soire';
+
 
 @Component({
   selector: 'app-evenement',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./evenement.component.css']
 })
 export class EvenementComponent implements OnInit {
+
+eventlist=events;
 
   constructor() { }
 

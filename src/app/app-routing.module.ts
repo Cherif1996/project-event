@@ -14,7 +14,7 @@ import { GalaryComponent } from './galary/galary.component';
 import { ServicesComponent } from './services/services.component';
 import{ AgenceComponent} from './agence/agence.component';
 import {EvenementComponent} from './evenement/evenement.component';
-
+import{DetailComponent}from './detail/detail.component';
 
 
 
@@ -32,6 +32,7 @@ const routes: Routes = [
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
+  {path: 'detail/:id' , component: DetailComponent},
 
   
   /*{ path: '', redirectTo: 'home', pathMatch: 'full' }*/

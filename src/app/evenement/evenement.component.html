@@ -1,16 +1,16 @@
 <h1>aaaaaaaaaaaaaaaaaaaaa</h1>
 
-<h1>Les évenements</h1>
+<h1 style="text-align: center;">Les évenements</h1>
 
 
 <div class="row">
-    <div *ngFor = "let event of eventlist ; index as eventId" class ="col-md-4">
+    <div *ngFor = "let event of eventlist; index as eventId" class ="col-md-4">
         <div class="card py-1" style="width: 20rem; height : 25rem;">
             <img src="{{event.image}}"  class="card-img-top" style="width: 20rem; height : 20rem" alt="{{event.eventName}}">
            <div class="card-body">
                <h5 class="card-title" [title]="'Mode details about'+ event.eventName">{{event.eventName}}</h5>
-               <a [routerlink]="['/evenement/event-details/',eventId]" class="btn btn-primary"> Details </a>
-
+               <a [routerLink]="['/detail/', eventId]" class="btn btn-primary"> Details </a>
+            
             </div>
         </div>
       

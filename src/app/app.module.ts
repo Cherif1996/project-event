@@ -21,6 +21,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { AgenceComponent } from './agence/agence.component';
 import { EvenementComponent } from './evenement/evenement.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +34,11 @@ import { EvenementComponent } from './evenement/evenement.component';
     BoardModeratorComponent,
     ProfileComponent,
     NavbarComponent,
-    GalaryComponent,
     ServicesComponent,
     ContactComponent,
     AgenceComponent,
     EvenementComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,

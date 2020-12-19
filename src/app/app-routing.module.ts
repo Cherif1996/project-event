@@ -14,24 +14,24 @@ import { GalaryComponent } from './galary/galary.component';
 import { ServicesComponent } from './services/services.component';
 import{ AgenceComponent} from './agence/agence.component';
 import {EvenementComponent} from './evenement/evenement.component';
-
+import{DetailComponent}from './detail/detail.component';
 
 
 
 const routes: Routes = [
- /* { path: '', component: HomeComponent },*/
+ { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
-  {path: 'galary' , component: GalaryComponent},
   {path: 'contact' , component: ContactComponent},
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
-  /*{ path: '', redirectTo: 'home', pathMatch: 'full' }*/
+  {path: 'detail/:id' , component: DetailComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 
 
 ];

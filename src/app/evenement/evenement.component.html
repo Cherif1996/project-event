@@ -1,1 +1,17 @@
-<p>evenement works!</p>
+<legend class="text-center" style="color:darkgoldenrod; font-weight: bolder; font-style: italic;margin-left: -60px;">Nos événements </legend>
+
+
+<div class="row">
+    <div *ngFor = "let event of eventlist; index as eventId" class ="col-md-4">
+        <div class="card py-1" style="width: 20rem; height : 25rem;">
+            <img src="{{event.image}}"  class="card-img-top" style="width: 20rem; height : 20rem" alt="{{event.eventName}}">
+           <div class="card-body">
+               <h5 class="card-title" [title]="'Mode details about'+ event.eventName">{{event.eventName}}</h5>
+               <a [routerLink]="['/detail/', eventId]" class="btn btn-primary"> Details </a>
+            
+            </div>
+        </div>
+      
+    </div>
+
+</div>

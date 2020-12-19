@@ -1,4 +1,32 @@
+ 
+         <div class="card mt-6" >
+           <div class="card-header">
+             <h3>Contact</h3>
+           </div>
+          <div class="card-body">
+            <form class="form-horizontal"  id="center" (ngSubmit)="submitMessage()">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" name="name" [(ngModel)]="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" [(ngModel)]="email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" [(ngModel)]="message" ></textarea>
+              </div>
+              <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-block">Envoyez</button>           
+               </div>
+            </form>
 
-<div class="jumbotron">
-    <p class="text-center"> contact works!</p> 
-</div>
+            <div class="alert alert-success" *ngIf="isSend">
+              Your message has been send !
+            </div>
+                     </div>
+        </div>
+         
+         
+ 

@@ -17,8 +17,6 @@ export class DetailComponent implements OnInit {
 });}
 
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c
+
+

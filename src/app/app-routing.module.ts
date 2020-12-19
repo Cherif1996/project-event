@@ -15,6 +15,10 @@ import { ServicesComponent } from './services/services.component';
 import{ AgenceComponent} from './agence/agence.component';
 import {EvenementComponent} from './evenement/evenement.component';
 import{DetailComponent}from './detail/detail.component';
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c
 
 
 
@@ -26,12 +30,22 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+<<<<<<< HEAD
+=======
+  /*{path: 'galary' , component: GalaryComponent},*/
+>>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c
   {path: 'contact' , component: ContactComponent},
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
   {path: 'detail/:id' , component: DetailComponent},
+<<<<<<< HEAD
   { path: '', redirectTo: 'home', pathMatch: 'full' }
+=======
+
+  
+  /*{ path: '', redirectTo: 'home', pathMatch: 'full' }*/
+>>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c
 
 
 ];

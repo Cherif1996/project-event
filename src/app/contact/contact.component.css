@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 .card{
     margin: 75px 0px 0px 0px;
+=======
+#form1{
+    margin: 75px 0px 0px 325px;
+>>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c
   
 }
 .center {
@@ -12,6 +17,7 @@
 
     margin-right: 273px;
     background-color: darkgoldenrod;
+<<<<<<< HEAD
     color: white;
     border: 1px;
 
@@ -24,3 +30,9 @@
     border: 2px;
   }
  
+=======
+    color: black;
+    border: 1px;
+
+  }
+>>>>>>> e5db9bc4852891dd6c1722121c5c1413bb48448c

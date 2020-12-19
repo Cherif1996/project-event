@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+/*import { Router, RouterLink } from '@angular/router';*/
 @Component({
   selector: 'app-agence',
   templateUrl: './agence.component.html',
@@ -11,5 +11,8 @@ export class AgenceComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+ /*  newChange(): void{
+    
+     this.router.navigateByUrl('/register') ;
+  }*/
 }

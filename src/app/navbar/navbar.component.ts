@@ -34,5 +34,52 @@ export class NavbarComponent implements OnInit {
     this.tokenStorageService.signOut();
     window.location.reload();
   }
+
+  toRendez(){
+
+    document.getElementById("rendez").scrollIntoView();
+  }
+
+  toGalerie(){
+    document.getElementById("gallery").scrollIntoView();
+    
+  }
+
+  toContact(){
+
+    document.getElementById("contact").scrollIntoView();
+
+   }
+
+   toEvent(){
+
+    document.getElementById("hotels").scrollIntoView();
+
+  }
+
+  toServe(){
+
+    document.getElementById("buy-tickets").scrollIntoView();
+  }
+
+  toAbout(){
+
+    document.getElementById("about").scrollIntoView();
+  }
+
+  toLogin(){
+
+    document.getElementById("login").scrollIntoView();
+  }
+
+  toRegistre(){
+
+    document.getElementById("registre").scrollIntoView();
+  }
+  toVenu(){
+
+    document.getElementById("venue").scrollIntoView();
+  }
+
 }
 

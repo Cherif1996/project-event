@@ -1,49 +1,70 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark" id=navbar>
-        <a class="navbar-brand" href="#">
-        <img src="assets/images/logo-01.png" width="100" height="50" class="d-inline-block align-top" alt="">
+<header id="header">
+    <div class="container">
 
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" routerLink="/" >Acceuil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/agence"> Rendez-vous </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/service"> Service </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/evenement">Evénement </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/contact">Contact </a>
-            </li>
-        </ul>
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="assets/images/logo-01.png" alt="" title=""></a>
+      </div>
 
 
-               <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
-            <li class="nav-item">
-                <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a href="/login" class="nav-link" routerLink="login">Login</a>
-            </li>
-        </ul>
+        <nav class="" id=nav-menu-container>
+            <!--  <a class="navbar-brand" href="#">
+                <img src="assets/images/logo-01.png" width="100" height="50" class="d-inline-block align-top" alt="">
 
-        <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
-            <li class="nav-item">
-                <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
-            </li>
-            <li class="nav-item">
-                <a href class="nav-link" (click)="logout()">LogOut</a>
-            </li>
-        </ul>
+            </a>-->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>-->
+
+        <!--- <div class="collapse navbar-collapse" id="navbarsExample02">-->
+                <ul class="nav-menu">
+                    <li class="menu-active">
+                        <a class="" routerLink="/" >Acceuil</a>
+                    </li>
+                    <li>
+                        <a class=""  (click)="toAbout()" routerLinkActive="active" routerLink="/about" > À propos </a>
+                    </li>
+                    <li>
+                        <a (click)="toRendez()" routerLinkActive="active" routerLink="/agence" > Rendez-vous </a>
+                    </li>
+
+                    <li class="">
+                        <a class="" (click)="toServe()" routerLinkActive="active" routerLink="/service"> Service </a>
+                    </li>
+                    <li class="">
+                        <a class="" (click)="toVenu()" routerLinkActive="active" routerLink="/venue">Venu </a>
+                    </li>
+                    <li class="">
+                        <a class="" (click)="toEvent()" routerLinkActive="active" routerLink="/evenement">Evénement </a>
+                    </li>
+                    <li class="">
+                        <a class="" (click)="toGalerie()" routerLinkActive="active" routerLink="/galerie">Galerie </a>
+                    </li>
+                    <li class="">
+                        <a class="" (click)="toContact()" routerLinkActive="active" routerLink="/contact">Contact </a>
+                    </li>
+                    
+                
+
+
+                    
+                    <li class="buy-tickets">
+                        <a (click)="toRegistre()" href="/register" class="" routerLink="register">Sign Up</a>
+                    </li>
+                    <li class="buy-tickets">
+                        <a (click)="toLogin()" href="/login" class="" routerLink="login">Login</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href class="nav-link" (click)="logout()">LogOut</a>
+                    </li>
+                </ul>
+        </nav>
     </div>
-</nav>
+</header>

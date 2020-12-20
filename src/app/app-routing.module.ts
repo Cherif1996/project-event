@@ -15,6 +15,11 @@ import { ServicesComponent } from './services/services.component';
 import{ AgenceComponent} from './agence/agence.component';
 import {EvenementComponent} from './evenement/evenement.component';
 import{DetailComponent}from './detail/detail.component';
+import{GalerieComponent}from './galerie/galerie.component';
+import { AboutComponent } from './about/about.component';
+import { VenuComponent } from './venu/venu.component';
+
+
 
 
 
@@ -32,7 +37,11 @@ const routes: Routes = [
   {path: 'service' , component: ServicesComponent},
   {path: 'agence' , component: AgenceComponent},
   {path: 'evenement' , component: EvenementComponent},
+  {path: 'galerie' , component: GalerieComponent},
+  {path: 'about' , component: AboutComponent},
+  {path: 'venu' , component: VenuComponent},
   {path: 'detail/:id' , component: DetailComponent},
+  
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 
   

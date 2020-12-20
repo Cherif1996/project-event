@@ -22,6 +22,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AgenceComponent } from './agence/agence.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { DetailComponent } from './detail/detail.component';
+import { GalerieComponent } from './galerie/galerie.component';
+import { AboutComponent } from './about/about.component';
+import { VenuComponent } from './venu/venu.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,10 @@ import { DetailComponent } from './detail/detail.component';
     AgenceComponent,
     EvenementComponent,
     DetailComponent,
+    GalaryComponent,
+    GalerieComponent,
+    AboutComponent,
+    VenuComponent,
   ],
   imports: [
     BrowserModule,

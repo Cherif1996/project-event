@@ -1,16 +1,35 @@
-<legend class="text-center" style="color:darkgoldenrod; font-weight: bolder; font-style: italic;margin-left: -60px;">Nos événements </legend>
+<section id="hotels" class="section-with-bg wow fadeInUp">
 
-<div class="row">
-    <div *ngFor = "let event of eventlist; index as eventId" class ="col-md-4">
-        <div class="card py-1" style="width: 20rem; height : 25rem;">
-            <img src="{{event.image}}"  class="card-img-top" style="width: 20rem; height : 20rem" alt="{{event.eventName}}">
-           <div class="card-body">
-               <h5 class="card-title" [title]="'Mode details about'+ event.eventName">{{event.eventName}}</h5>
-               <a [routerLink]="['/detail/', eventId]" class="btn btn-primary"> Details </a>
-            
-            </div>
+    <div class="container">
+
+        <div class="section-header">
+          <h2>Événement</h2>
+          <p>Voici quelques Événements</p>
         </div>
-      
-    </div>
 
-</div>
+        <div class="row">
+  
+                    <div *ngFor = "let event of eventlist; index as eventId" class ="col-lg-4 col-md-6">
+
+                        <div class="hotel">
+    
+                            <div class="hotel-img" style="">
+                                            <div class="hotel-img">
+
+                                                <img src="{{event.image}}"  class="img-fluid" style="" alt="{{event.eventName}}">
+                                            </div>
+                                    <div class="text-center">
+                                        <h5 class="card-title" [title]="'Mode details about'+ event.eventName">{{event.eventName}}</h5>
+                                        <a [routerLink]="['/detail/', eventId]" class="buy-tickets"> Details </a>
+                                    
+                                     </div>
+    
+                        
+                         </div>
+          
+                                </div>
+                        </div>
+                 </div>
+            </div>
+
+</section>
